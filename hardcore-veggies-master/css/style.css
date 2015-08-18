@@ -1,0 +1,102 @@
+
+body {
+	
+	background-image: url('../imgs/Stamped-Background.png');
+	background-attachment: fixed;
+	
+}
+
+main {
+	
+	max-width: 650px;
+    margin: 0 auto;
+	margin-top: 10%;
+	
+}
+
+.table {
+	
+    display: table;
+	
+	max-width: 450px;
+    margin: 0 auto;
+	margin-top: 20px;
+	
+	padding-bottom: 3px;
+	padding-top: 3px;
+		
+	/* Fallback for web browsers that don't support RGBa */
+	background-color: rgb(25, 25, 25);
+	/* RGBa with 0.9 opacity */
+	background-color: rgba(25, 25, 25, 0.9);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+		
+	border: 5px solid #d0cfcf;
+		
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px; /* future proofing */
+	-khtml-border-radius: 25px; /* for old Konqueror browsers */
+	
+	box-shadow: 8px 13px 15px 0px rgba(0, 0, 0, 0.75); 
+	
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+.row  {
+	
+    display: table-row;
+	
+	
+}
+
+.table .row:last-child  .cell {
+	
+	border-bottom: none;
+	
+}
+
+.row .cell:first-child {
+	
+	font-size: 18px;	
+	width: 70%;
+	font-weight: 700;
+
+}
+
+.row .cell:nth-child(2) {
+	
+	font-size: 18px;	
+	width: 70%;
+	font-weight: 700;
+	color: #9e0b0f;
+	
+}
+
+.cell .mentions {
+	
+	font-size: 14px;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.9);
+	padding-left: 5px;
+	padding-right: 5px;
+	
+}
+
+
+.cell  {
+	
+	border-bottom: .5px solid rgba(245, 245, 245, 0.2);
+    display: table-cell;
+    border-width: thin;
+    padding-left: 25px;
+    padding-right: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
