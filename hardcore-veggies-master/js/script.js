@@ -1,7 +1,6 @@
 
 //Create instance of Poller
 var sPoll = new window.spredfast.Poller;
-$("#results-table").hide();
 
 //Call Poll function for the initial load
 doPoll();
@@ -26,7 +25,6 @@ function doPoll(){
 		
 		//Number of produce on board
 		var displayCount = 5;
-		
 		for( var x = 0; x < displayCount; x++ ) {
 			
 			//Timeout function to allow for animating each row one at a time
@@ -40,7 +38,7 @@ function doPoll(){
 						$( "#" + rowNumber + " .pName").hide().text(  fullResults[x].name ).fadeIn(1000);				
 						$( "#" + rowNumber + " .pCount").hide().text( Number(fullResults[x].count).toLocaleString('en') ).fadeIn(1000);
 					
-					//Otherwise load the rows for the first time
+					//Otherwise, load the rows for the first time
 					} else {
 			
 						$("#results-table").append( '<div id = "' +rowNumber + '" class="row"> <div class="cell"><span class="pName"> ' + fullResults[x].name + '</span></div> <div class="cell"><span class="pCount">' +  Number(fullResults[x].count).toLocaleString('en') + '</span><span class="mentions">Mentions</span></div></div>' ).fadeIn(3000);	

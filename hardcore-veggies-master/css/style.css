@@ -39,7 +39,6 @@ main {
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
 	border-radius: 25px; /* future proofing */
-	-khtml-border-radius: 25px; /* for old Konqueror browsers */
 	
 	box-shadow: 8px 13px 15px 0px rgba(0, 0, 0, 0.75); 
 	
@@ -51,7 +50,6 @@ main {
 .row  {
 	
     display: table-row;
-	
 	
 }
 
@@ -81,7 +79,7 @@ main {
 .cell .mentions {
 	
 	font-size: 14px;
-	font-weight: 300;
+	font-weight: 30000;
 	color: rgba(255, 255, 255, 0.9);
 	padding-left: 5px;
 	padding-right: 5px;
